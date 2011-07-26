@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  weight: 9.99
+  inserted_on: 2011-07-25
+
+two:
+  user_id: 1
+  weight: 9.99
+  inserted_on: 2011-07-25

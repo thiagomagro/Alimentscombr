@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  password_digest: MyString
+  username: MyString
+  birth: 2011-07-25
+  profile_id: 1
+  weight_id: 1
+
+two:
+  name: MyString
+  email: MyString
+  password_digest: MyString
+  username: MyString
+  birth: 2011-07-25
+  profile_id: 1
+  weight_id: 1
