@@ -5,6 +5,7 @@ jQuery ->
     el.toggle();
     el.css({"left":($(this).offset().left - $(el).outerWidth() - 10)})
   );
+  alert("Ok")
   app = $.sammy ->
 				this.get '#/', (context)->
           $.ajax({
