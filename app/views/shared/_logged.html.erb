@@ -1,0 +1,17 @@
+<div id="headUser" class="padding10">
+  <%t(:welcome)%> <%=session[:user].full_name%>
+  <div class="avatarForm hide dialog box_shadow span-7">
+    <%=form_for session[:user],:remote=>true,:html => { :multipart => true } do |f| %>
+    <%=f.label :avatar%><br/>
+    <%= f.file_field :image %>
+    <%= submit_tag t(:register),:class=>"button green"%>
+    <%end%>
+  </div>  
+  <%=render "users/avatar", :user => session[:user]%>
+  <%= link_to t(:my_infos), "#"+edit_user_path(session["user"]), :class=>"smallButton yellow" %>
+  <%= link_to t(:logout), "/sessions/destroy", {:method => :delete, :class=>"smallButton red"}%>
+</div>
+<div id="headerItens" class="padding10">
+  <%= link_to image_tag("dashboard_16.png")+" "+t(:dashboard),"/#/dashboard", :class=>"button"%>
+  <%= link_to image_tag("briefcase_16.png")+" "+t(:projects),"/#/projects", :class=>"button"%>
+</div>

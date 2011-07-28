@@ -1,0 +1,3 @@
+<%flash.each do |key,value|%>
+  $("#messagery").prepend("<%= escape_javascript( render(:partial => "shared/message", :locals => {:msg_type => key,:msg_content=>value}) ) %>");
+<%end%>

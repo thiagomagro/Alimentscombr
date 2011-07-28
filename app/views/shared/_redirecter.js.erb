@@ -1,0 +1,10 @@
+<%=render "shared/messagery"%>
+<%if not @content.nil?%>
+  $("#content").html("<%= escape_javascript( render(:partial => @content, :layout => "layouts/content") ) %>");
+<%end%>
+<%if not @header.nil?%>
+  $("#header").html("<%= escape_javascript( render(:partial => @header) ) %>");
+<%end%>
+<%if not @url.nil?%>
+  location.href="#/<%=@url%>"
+<%end%>

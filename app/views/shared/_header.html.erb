@@ -1,1 +1,21 @@
-<%= image_tag "logo_white.png"%>
+<div class="container">
+  <div class="right">
+    <%if is_logged?%>
+      <%=render "shared/logged"%>
+    <%else%>
+    <div class="padding10">
+      <a id="loginBtn" href="javascript:void(0)" class="button">Login</a>
+      <div class="loginForm hide dialog box_shadow span-7">
+        <%=render "sessions/auth"%>
+      </div>
+    </div>
+    <%end%>
+  </div>
+  <div id="header">
+    <%if is_logged? and not session["project"].nil?%>
+    <%=render "projects/header"%>
+    <%else%>
+    <%=image_tag "logo_white_120.png"%>
+    <%end%>
+  </div>
+</div>

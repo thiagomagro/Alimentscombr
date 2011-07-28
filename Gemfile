@@ -14,6 +14,12 @@ gem 'uglifier'
 
 gem 'jquery-rails'
 
+gem "carrierwave"
+
+gem 'remotipart', '~> 0.4'
+
+gem "mini_magick", "~> 3.3"
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
