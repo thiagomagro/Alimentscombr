@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Aliments</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<title>Aliments</title>
+	<%= stylesheet_link_tag    "application" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
-    <%=render "shared/header"%>
-  </div>
-    
-<%= yield %>
-
+	<div class="container">
+		<%=render "shared/header"%>
+	</div>
+	<div id="messagery"></div>
+	<%= yield %>
 </body>
 </html>
